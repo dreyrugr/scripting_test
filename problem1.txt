@@ -2,16 +2,27 @@ Parse the two SYSCONFIG-A files in the data folder.
 Extract the following:
 * System Serial Number
 * Model Name (A model name will start with FAS and have 4 numbers after it)  
-* Extract the name of each PCI card in each slot.  Ignore items in slot 0, as those are on the motherboard.
+* Extract the name of each PCI card in each slot.  Ignore items in slot 0, 
+  as those are on the motherboard.  Note: there may be multiple lines for the same PCI card.  
+  This is due to having multiple ports on each card.  The PCI card should be listed only once, 
+  regardless of how many ports are on the card.
 * Extract the number of disks on each port.  
   A disk adapter port looks something like this (the port number is 7a)
 	slot 7: FC Host Adapter 7a (LSI Logic 949E rev. A.1, L-port, <UP>)   
   An example disk looks like this:
 	 16  : NETAPP   X276_FAL9E288F10 NA05 272.0GB 520B/sect (DH07P790548K)
 
+Input:
 The input to the script should be the name of the SYSCONFIG-A file.  
-The output of the script should be JSON format.  It should have properties for the model name and serial number, and lists for 
- each PCI card and a list of ports that have disks and the quantity of disks on each of those ports.
+
+Output expectations: 
+The output of the script should be JSON format.  
+The JSON should contain: 
+* properties for the model name and serial number
+* List of PCI cards.  This list should include the slot number and the description for the card.
+* list of each port that have disks and the quantity of disks on that port.
+
+
 
 
 

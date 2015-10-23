@@ -1,5 +1,8 @@
-Write a short script to connect to the REST service 
+Write a short script to connect to the REST service
 located at: http://finance.yahoo.com/webservice/v1/symbols/NTAP/quote?format=json&view=detail
+
+This problem is intended to show how you interact with a REST api.  Please
+don't do this with a shell script.  
 
 Script will take as input a list of ticker symbols (replace 'NTAP' in JSON above
 for other symbols).  Max of 5 symbols.
