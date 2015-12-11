@@ -22,7 +22,8 @@ The JSON should contain:
 * List of PCI cards.  This list should include the slot number and the description for the card.
 * list of each port that have disks and the quantity of disks on that port.
 
-
+Example output might look like this:
+{'model': 'FAS6030', 'disks_per_port': {'6a': 84, '6b': 84, '7b': 84, '7a': 84, '0a': 56, '2a': 24, '0e': 56, '5a': 84, '5b': 84}, 'serial': '1003093853', 'PCICards': {'1': 'NVRAM (NVRAM VI)', '2': 'SAS Host Adapter 2a (PMC-Sierra PM8001 rev. C, SAS, <UP>)', '5': 'FC Host Adapter 5a (LSI Logic 949E rev. A.1, L-port, <UP>)', '7': 'FC Host Adapter 7a (LSI Logic 949E rev. A.1, L-port, <UP>)', '6': 'FC Host Adapter 6a (LSI Logic 949E rev. A.1, L-port, <UP>)', '8': 'Dual 10G Ethernet Controller T320E-XFP'}}
 
 
 
