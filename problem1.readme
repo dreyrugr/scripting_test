@@ -1,0 +1,10 @@
+Script is problem1.sh
+
+Syntax to run example is:
+./problem1.sh /path/to/config/file.txt
+(i.e. ./problem1.sh data/SYSCONFIG-A.1.txt)
+
+Results will be located in the same location as the input config with a .output extension.
+(i.e. data/SYSCONFIG-A.1.txt.output)
+
+

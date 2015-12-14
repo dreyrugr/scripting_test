@@ -1,0 +1,8 @@
+Script is short and simple.
+
+There is likely a better way to strip the quotes and replace teh commas with spaces, but I was able to capture all the data with one line then clean it up to the proper format.
+
+Syntax to run this script is:
+./problem2.sh
+
+Script cleans up temp file.  If you want to view it, comment the last line in the script to prevent removal.
